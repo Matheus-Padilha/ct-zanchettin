@@ -80,23 +80,23 @@ export const Hero: React.FC = () => {
             O <strong>{GYM_INFO.name}</strong> é o centro de treinamento mais completo de Chapecó no bairro São Cristóvão: <strong>Musculação Pesada</strong>, <strong>Muay Thai Tradicional</strong>, <strong>Boxe</strong> e <strong>MMA</strong> em um ambiente de alto nível.
           </p>
 
-          {/* Botões de Ação Direta em formato Pílula (rounded-full) */}
-          <div className="hero-ctas pt-3 sm:pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto">
+          {/* Botões de Ação Direta em formato Pílula (rounded-full) - Linha única sem engordar */}
+          <div className="hero-ctas pt-3 sm:pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-xl mx-auto">
             <a
               href="#planos"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-yellow-500 hover:bg-yellow-400 text-zinc-950 font-extrabold text-sm uppercase tracking-wider transition-all shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 hover:-translate-y-0.5 active:scale-95 group"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-yellow-500 hover:bg-yellow-400 text-zinc-950 font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 hover:-translate-y-0.5 active:scale-95 whitespace-nowrap group"
             >
               <span>Conhecer Nossos Planos</span>
-              <ArrowRight className="w-4 h-4 text-zinc-950 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 text-zinc-950 transition-transform group-hover:translate-x-1 shrink-0" />
             </a>
 
             <a
               href={GYM_INFO.contact.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-sm uppercase tracking-wider backdrop-blur-md transition-all active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs sm:text-sm uppercase tracking-wider backdrop-blur-md transition-all active:scale-95 whitespace-nowrap"
             >
-              <MessageCircle className="w-4 h-4 text-yellow-400" />
+              <MessageCircle className="w-4 h-4 text-yellow-400 shrink-0" />
               <span>Fale no WhatsApp</span>
             </a>
           </div>
