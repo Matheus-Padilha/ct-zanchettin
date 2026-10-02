@@ -264,8 +264,8 @@ export const Modalities: React.FC = () => {
                 </div>
 
                 {/* Coluna Direita: Imagem Real da Modalidade com Elemento Orgânico em Dourado */}
-                <div className="lg:col-span-5 flex items-center justify-center lg:justify-end order-1 lg:order-2 overflow-visible">
-                  <div className="relative w-full max-w-md lg:max-w-none flex items-center justify-center h-[260px] sm:h-[380px] lg:h-[540px]">
+                <div className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2 overflow-visible px-2 sm:px-6">
+                  <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg flex items-center justify-center h-[260px] sm:h-[380px] lg:h-[540px]">
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
                       <svg
                         viewBox="0 0 1000 1450"
