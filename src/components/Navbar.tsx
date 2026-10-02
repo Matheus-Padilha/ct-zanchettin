@@ -88,12 +88,20 @@ export const Navbar: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#inicio')}
               className="flex items-center group focus:outline-none shrink-0"
             >
-              <div className="relative w-auto flex items-center shrink-0 h-9 sm:h-11">
+              <div className="relative flex items-center gap-2 sm:gap-2.5 shrink-0 py-0.5">
                 <img
                   src={logoZanchettin}
                   alt={`${GYM_INFO.name} Logo`}
-                  className="w-auto h-8 sm:h-10 object-contain shrink-0 drop-shadow-md transition-transform group-hover:scale-105"
+                  className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0 drop-shadow-md transition-transform group-hover:scale-105 rounded-full ring-1 ring-yellow-400/60 bg-black/60 p-0.5"
                 />
+                <div className="flex flex-col text-left">
+                  <span className="text-white font-black font-display text-xs sm:text-sm tracking-wider uppercase leading-none">
+                    CT <span className="text-yellow-400">ZANCHETTIN</span>
+                  </span>
+                  <span className="text-[8px] sm:text-[9px] font-bold tracking-[0.2em] text-zinc-400 uppercase leading-none mt-1">
+                    Muay Thai • Boxe • Força
+                  </span>
+                </div>
               </div>
             </a>
           </div>
